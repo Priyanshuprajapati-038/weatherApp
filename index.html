@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <!-- Header -->
+            <div class="header">
+
+                <div class="logo">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <h2>WeatherNow</h2>
+                </div>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Error Message -->
+            <p id="errorMessage"></p>
+
+
+            <!-- Weather Information -->
+            <div class="weather-info">
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h1 id="cityName">London</h1>
+
+                    <p id="country">United Kingdom</p>
+
+                </div>
+
+
+                <!-- Main Temperature -->
+                <div class="main-weather">
+
+                    <img
+                        id="weatherIcon"
+                        src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                        alt="Weather Icon"
+                    >
+
+                    <div>
+
+                        <h1 id="temperature">
+                            20°C
+                        </h1>
+
+                        <p id="weatherCondition">
+                            Sunny
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Details -->
+                <div class="weather-details">
+
+                    <div class="detail-card">
+
+                        <i class="fa-solid fa-temperature-half"></i>
+
+                        <div>
+
+                            <p>Feels Like</p>
+
+                            <h3 id="feelsLike">
+                                20°C
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <div>
+
+                            <p>Humidity</p>
+
+                            <h3 id="humidity">
+                                50%
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                        <div>
+
+                            <p>Wind Speed</p>
+
+                            <h3 id="windSpeed">
+                                10 km/h
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                        <div>
+
+                            <p>Visibility</p>
+
+                            <h3 id="visibility">
+                                10 km
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Extra Information -->
+
+                <div class="extra-info">
+
+                    <div>
+
+                        <p>Pressure</p>
+
+                        <h3 id="pressure">
+                            1015 mb
+                        </h3>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>UV Index</p>
+
+                        <h3 id="uvIndex">
+                            5
+                        </h3>
+
+                    </div>
+
+
+                    <div>
+
+                        <p>Last Updated</p>
+
+                        <h3 id="lastUpdated">
+                            --
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
